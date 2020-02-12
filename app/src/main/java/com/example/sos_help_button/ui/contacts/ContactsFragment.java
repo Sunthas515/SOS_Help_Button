@@ -16,15 +16,15 @@ import com.example.sos_help_button.R;
 
 public class ContactsFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private ContactsViewModel contactsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
+        contactsViewModel =
+                ViewModelProviders.of(this).get(ContactsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_contacts, container, false);
         final TextView textView = root.findViewById(R.id.Manage_Contacts);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
+        contactsViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

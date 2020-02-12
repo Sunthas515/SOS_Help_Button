@@ -13,14 +13,14 @@
 
     <fragment
         android:id="@+id/nav_manage"
-        android:name="com.example.sos_help_button.ui.gallery.GalleryFragment"
+        android:name="com.example.sos_help_button.ui.contacts.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_contacts" />
 
     <fragment
         android:id="@+id/nav_message"
-        android:name="com.example.sos_help_button.ui.slideshow.SlideshowFragment"
+        android:name="com.example.sos_help_button.ui.message.MessageFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_message" />
 
 </navigation>
